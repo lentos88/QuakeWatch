@@ -1,0 +1,10 @@
+services:
+  quakewatch:
+    build:
+      context: .
+      network: host
+    image: quakewatch:1.0
+    container_name: my_quakewatch
+    ports:
+      - "5000:5000"
+    restart: always
