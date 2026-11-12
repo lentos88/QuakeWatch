@@ -1,7 +1,8 @@
 services:
   quakewatch:
     build:
-      context: .
+      context: ../app
+      dockerfile: ../phase1-docker/Dockerfile
       network: host
     image: quakewatch:1.0
     container_name: my_quakewatch
